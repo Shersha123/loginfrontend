@@ -91,11 +91,11 @@ const Dashboard = () => {
     //// 2. body => data & JSON(string)
     //// 3. header => JSON 
 
-     fetch(`http://localhost:5000/user`,{
+     fetch(`https://loginbackend-eta.vercel.app/user`,{
       method: "POST",
       body: JSON.stringify(user),
       headers: { "Content-type" : "application/json" },
-     }).then (()=> navigate("/movies"));
+     }).then (()=> navigate("/dash"));
 
   };
   return (

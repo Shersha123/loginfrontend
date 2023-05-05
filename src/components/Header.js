@@ -28,7 +28,7 @@ const Header = () => {
   const logoutuser = async () => {
     let token = localStorage.getItem("usersdatatoken");
 
-    const res = await fetch("http://localhost:5000/logout", {
+    const res = await fetch("https://loginbackend-eta.vercel.app/logout", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
